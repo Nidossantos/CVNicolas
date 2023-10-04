@@ -66,17 +66,6 @@ nav{
         line-height: 17px;
     }
     footer{
-        /*background: #000;
-        height: 50px;
-        width: 100%;
-        bottom: 0px;
-        position: fixed;
-        color: white;
-        text-align: center;
-        padding: 15px;
-        box-sizing: border-box;
-        font-size: 1em;
-        align-content: center;*/
         background: #000;
         height: 50px;
         width: 100%;
@@ -90,7 +79,7 @@ nav{
         align-content: center;
         text-align: center;
         margin-top: 20px;
-        position: sticky;
+        position: fixed;
 }
 
 .foto{
@@ -136,5 +125,22 @@ nav{
         padding: 20px;
         margin-bottom: 20px; 
         box-sizing: border-box;
+    }
+
+    footer{
+        background: #000;
+        height: 50px;
+        width: 100%;
+        bottom: 0px;
+        position: fixed;
+        color: white;
+        text-align: center;
+        padding: 15px;
+        box-sizing: border-box;
+        font-size: 1em;
+        align-content: center;
+        text-align: center;
+        margin-top: 20px;
+        position: sticky;
     }
 }
