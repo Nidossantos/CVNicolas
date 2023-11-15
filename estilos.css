@@ -49,16 +49,32 @@ nav{
         display: flex;
     }
 
-    .cajatexto{
+    .cajatexto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         background-color: #2E0000;
         width: 100%;
-        height: 260px;
+        height: 360px;
         padding: 50px;
         box-sizing: border-box;
         border-radius: 1cm;
         color: #fff;
     }
- 
+    
+    .columna {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .subcolumna {
+        width: 33%;
+        text-align: left;
+        margin-bottom: 20px;
+        margin-right: 20px; 
+    
+    }
+
     .textobold{
         font-family:'Courier New';
         font-weight: bold;
@@ -96,6 +112,7 @@ nav{
     margin-bottom: 20px;
 }
 
+
 /* CSS para hacer responsive */
 
 @media screen and (max-width: 550px) {
@@ -121,10 +138,19 @@ nav{
         text-align: center;
     }
     .cajatexto{
-        height: auto;
-        padding: 20px;
+        height: 300px;
+        padding: 10px;
         margin-bottom: 20px; 
         box-sizing: border-box;
+    }
+
+    .subcolumna {
+        margin-right: 0;
+    }
+
+    .habilidades-container {
+        max-width: 549px;
+        margin: auto;
     }
 
     footer{

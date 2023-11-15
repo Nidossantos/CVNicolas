@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos.css">
     <title>CV Nicolas Dos Santos</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
     <header>
@@ -31,14 +32,31 @@
                 <div >
                    <img class="foto" src="imagenes/conocimientos.jpeg" alt="foto">
                 </div>
+                <!-- index.html -->
+                <div id="programacion" class="barra-de-progreso"></div>
+                <div id="disenoWeb" class="barra-de-progreso"></div>
+                <div id="trabajoEnEquipo" class="barra-de-progreso"></div>
+                <!-- Agrega más elementos según sea necesario -->
+
               
                 <div class="cajatexto">
-                    <span>-Lenguajes de programación: </span><br>
-                    <span>-C, Python, HTML, CSS nivel básico</span><br><br>
-                    <span>-MS Office: </span><br>
-                    <span>-Word, Excel y Powerpoint, nivel avanzado</span><br><br>
-                    <span>-Idiomas</span><br>
-                    <span>-Ingles: Conversacional. Portugues: básico</span><br>
+                    <section class="columna">
+                        <div class="subcolumna">
+                            <h3>Lenguajes de programación</h3>
+                        </div>
+                        <div class="subcolumna">
+                            <h3>MS Office</h3>
+                        </div>
+                        <div class="subcolumna">
+                            <h3>Idiomas</h3>
+                        </div>
+                    </section>
+                
+                    <section class="columna">
+                        <canvas id="habilidades" width="600" height="200"></canvas>
+                    </section>
+
+                    <script src="script.js"></script>
                 </div>
             </div>
         </div>
