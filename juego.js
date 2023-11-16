@@ -1,16 +1,16 @@
 // juego.js
 document.addEventListener("DOMContentLoaded", function () {
-    var numeroCorrecto = Math.floor(Math.random() * 10) + 1; // Generar un número aleatorio del 1 al 10
-    var intentos = 3;
+    var numeroCorrecto = Math.floor(Math.random() * 20) + 1; // Generar un número aleatorio del 1 al 10
+    var intentos = 5;
 
     function jugarJuego() {
         var mensaje;
-        var respuestaUsuario = prompt("Ingresa un número del 1 al 10:");
+        var respuestaUsuario = prompt("Ingresa un número del 1 al 20:");
 
         if (respuestaUsuario !== null) {
             var numeroIngresado = parseInt(respuestaUsuario);
 
-            if (!isNaN(numeroIngresado) && numeroIngresado >= 1 && numeroIngresado <= 10) {
+            if (!isNaN(numeroIngresado) && numeroIngresado >= 1 && numeroIngresado <= 20) {
                 if (numeroIngresado === numeroCorrecto) {
                     alert("¡Muy bien! ¡Podés entrar a la página!");
                 } else {
@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     }
                 }
             } else {
-                alert("Por favor, ingresa un número válido del 1 al 10.");
+                alert("Por favor, ingresa un número válido del 1 al 20.");
                 jugarJuego(); // Jugar de nuevo
             }
         }
